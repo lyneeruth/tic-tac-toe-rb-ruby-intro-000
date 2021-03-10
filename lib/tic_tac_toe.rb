@@ -8,10 +8,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+#converts user input to array index
 def input_to_index(user_input)
   user_input.to_i - 1
 end
 
+#assigns user input to upate the board array
 def move(board, index, current_player)
   board[index] = current_player
 end
